@@ -1,5 +1,7 @@
 package com.example.countryandtown;
 
+import com.example.countryandtown.city.dto.CityDto;
+import com.example.countryandtown.city.service.CityService;
 import com.example.countryandtown.country.dto.CountryDto;
 import com.example.countryandtown.country.entity.Country;
 import com.example.countryandtown.country.service.CountryServiceImpl;
@@ -63,4 +65,23 @@ public class CountryandtownApplication {
 			}
 		 };
   }
+  @Bean
+  CommandLineRunner runnerCity(CityService cityService){
+		Logger logger =LogManager.getLogger(CountryandtownApplication.class);
+       return args -> {
+		   ObjectMapper objectMapper = new ObjectMapper();
+		   TypeReference<List<CityDto>> typeReference = new TypeReference<>(){};
+		   InputStream inputStream = TypeReference.class.getResourceAsStream("/fixture/cities.json");
+		   try {
+			  List<CityDto> cityDtoList = objectMapper.readValue(inputStream,typeReference);
+			  cityService.saveAllCity(cityDtoList);
+			   System.out.println("City Saved");
+
+		   }
+		   catch (IOException exception){
+			   System.out.println("Unable to save Cities: " + exception.getMessage());
+
+		   }
+	   };
+	}
 }
