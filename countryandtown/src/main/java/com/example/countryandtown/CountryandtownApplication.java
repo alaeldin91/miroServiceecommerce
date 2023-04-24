@@ -15,13 +15,16 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
 @SpringBootApplication
+@EnableEurekaServer
 public class CountryandtownApplication {
 
 	public static void main(String[] args) {
@@ -83,5 +86,9 @@ public class CountryandtownApplication {
 
 		   }
 	   };
+	}
+	@Bean
+	public WebClient webClient(){
+		return  WebClient.builder().build();
 	}
 }

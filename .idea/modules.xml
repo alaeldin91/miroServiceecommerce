@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api_gateway/api_gateway.iml" filepath="$PROJECT_DIR$/api_gateway/api_gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/countryandtown/countryandtown.iml" filepath="$PROJECT_DIR$/countryandtown/countryandtown.iml" />
       <module fileurl="file://$PROJECT_DIR$/ecommerce-backend/ecommerce-backend.iml" filepath="$PROJECT_DIR$/ecommerce-backend/ecommerce-backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/miroServiceecommerce.iml" filepath="$PROJECT_DIR$/.idea/miroServiceecommerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ecommerce/serviceRegistry/serviceRegistry.iml" filepath="$PROJECT_DIR$/../ecommerce/serviceRegistry/serviceRegistry.iml" />
     </modules>
   </component>
 </project>

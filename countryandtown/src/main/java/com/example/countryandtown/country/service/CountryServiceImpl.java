@@ -8,6 +8,7 @@ import com.example.countryandtown.exception.ResourceNotFoundException;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 public class CountryServiceImpl implements CountryService{
     private final CountryRepository repository;
+    private WebClient webClient;
     @Override
     public Iterable<CountryDto> listCountry(List<CountryDto> countryDtoList) {
         List<Country> countryList = countryDtoList.stream().map(countryDto -> CountryMapper.mapToCountry(countryDto)).toList();

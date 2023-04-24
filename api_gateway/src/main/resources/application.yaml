@@ -1,0 +1,46 @@
+server:
+  port: 9194
+  endpoint.gateway.enabled: true
+  endpoints.web.exposure.include: gateway
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8085
+  application.name: API-GET-WAY-SERVER
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      discovery.locator.enabled: true
+      routes:
+        - id: Country-AND-TOWN
+          uri: lb://Country-AND-TOWN
+          predicates:
+            - Path=/api/v1/country/**
+
+        - id: ECOMMERCE-BACKEND
+          uri: lb://ECOMMERCE-BACKEND
+          predicates:
+            - Path=/api/v1/product/**
+
+logging:
+  file:
+    name: API-GET-WAY-SERVER.log
+    max-history: 5
+    max-size: 10MB
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway:
+            handler:
+              RoutePredicateHandlerMapping:
+                DEBUG
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+  instance:
+    prefer-ip-address: true

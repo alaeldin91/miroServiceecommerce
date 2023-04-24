@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/state")
+@RequestMapping("/api/v1/country/state")
 @AllArgsConstructor
 public class StateController {
     private final StateServiceImpl stateService;
