@@ -4,9 +4,13 @@
     <file url="file://$PROJECT_DIR$/../ecommerce/serviceRegistry/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api_gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api_gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/countryandtown/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/countryandtown/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ecommerce-backend/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ecommerce-backend/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/category")
+@RequestMapping("api/v1/product/category")
 @AllArgsConstructor
 public class ProductCategoryController {
     private final ProductCategoryService productCategoryService;

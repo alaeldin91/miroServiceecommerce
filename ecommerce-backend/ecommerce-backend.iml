@@ -47,7 +47,6 @@
     <orderEntry type="library" name="Maven: org.springframework.hateoas:spring-hateoas:2.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-core:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.atteo:evo-inflector:1.3" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.14.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.14.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:3.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:3.0.5" level="project" />
@@ -69,8 +68,6 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:10.1.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:6.0.7" level="project" />
-    <orderEntry type="library" name="Maven: io.micrometer:micrometer-observation:1.10.5" level="project" />
-    <orderEntry type="library" name="Maven: io.micrometer:micrometer-commons:1.10.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:6.0.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.0.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-webflux:3.0.5" level="project" />
@@ -171,12 +168,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:6.0.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-server:4.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:3.0.5" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator-autoconfigure:3.0.5" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator:3.0.5" level="project" />
-    <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.10.5" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.hdrhistogram:HdrHistogram:2.1.12" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-freemarker:3.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.32" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:6.0.7" level="project" />
@@ -202,5 +193,16 @@
     <orderEntry type="library" name="Maven: jakarta.inject:jakarta.inject-api:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.14.2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:4.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator-autoconfigure:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-observation:1.10.5" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-commons:1.10.5" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.10.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.hdrhistogram:HdrHistogram:2.1.12" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-config:4.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-config-client:4.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.14.2" level="project" />
   </component>
 </module>

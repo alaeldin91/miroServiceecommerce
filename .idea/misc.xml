@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/ecommerce-backend/pom.xml" />
         <option value="$PROJECT_DIR$/../ecommerce/serviceRegistry/pom.xml" />
         <option value="$PROJECT_DIR$/api_gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/orders/pom.xml" />
       </list>
     </option>
   </component>
