@@ -523,3 +523,4 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 2023-04-27T12:23:57.164+04:00  INFO 12212 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2023-04-27T12:28:57.178+04:00  INFO 12212 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2023-04-27T12:33:57.195+04:00  INFO 12212 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-27T12:38:57.203+04:00  INFO 12212 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
