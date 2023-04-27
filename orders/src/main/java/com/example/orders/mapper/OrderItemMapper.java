@@ -9,7 +9,7 @@ public class OrderItemMapper {
                                                 ,ordersItem.getImageUrl()
                                                ,ordersItem.getUnitPrice(),
                                                ordersItem.getQuantity(),
-                                                ordersItem.getProductName());
+                                                ordersItem.getProductName(),ordersItem.getOrder());
         return  orderItemDto;
     }
 
@@ -18,7 +18,7 @@ public class OrderItemMapper {
                                          ordersItemDto.getImageUrl(),
                                          ordersItemDto.getUnitPrice(),
                                          ordersItemDto.getQuantity(),
-                                         ordersItemDto.getProductName());
+                                         ordersItemDto.getProductName(),ordersItemDto.getOrders());
          return  ordersItem;
 
     }

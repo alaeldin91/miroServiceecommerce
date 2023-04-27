@@ -8,6 +8,9 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @AllArgsConstructor
@@ -32,4 +35,26 @@ public class Orders {
     @UpdateTimestamp
     private Date updateDate;
 
+    @ManyToOne()
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "shipping_address")
+    private Address shippingAddress;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "billing_address",referencedColumnName = "id")
+    private Address billingAddress;
+  @OneToMany(cascade = CascadeType.ALL,mappedBy = "order")
+    private Set<OrdersItem> ordersItems = new HashSet<>();
+    public  void add(OrdersItem item){
+    if (item != null){
+        if (ordersItems ==null){
+       ordersItems = new HashSet<>();
+        }
+        ordersItems.add(item);
+        item.setOrder(this);
+    }
+
+    }
 }

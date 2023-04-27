@@ -26,5 +26,7 @@ public class Address {
     private String stateName;
     @Column(name = "street_name")
     private String streetName;
-
+   @OneToOne()
+    @PrimaryKeyJoinColumn
+    private Orders orders;
 }

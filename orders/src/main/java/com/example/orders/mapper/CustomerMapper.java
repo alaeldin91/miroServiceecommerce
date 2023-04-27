@@ -8,7 +8,8 @@ public class CustomerMapper {
         CustomerDto customerDto = new CustomerDto(customer.getId()
                                                   , customer.getFirstName(),
                                                    customer.getLastName(),
-                                                   customer.getEmail());
+                                                   customer.getEmail(),
+                                                     customer.getOrdersSet());
         return  customerDto;
     }
 
@@ -16,7 +17,8 @@ public class CustomerMapper {
         Customer customer = new Customer(customerDto.getId(),
                                           customerDto.getFirstName(),
                                            customerDto.getLastName(),
-                                            customerDto.getEmail());
+                                            customerDto.getEmail(),
+                                             customerDto.getOrdersSet());
     return  customer;
     }
 }

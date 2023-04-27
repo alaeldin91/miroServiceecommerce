@@ -21,7 +21,7 @@
       <module name="config-server" target="17" />
       <module name="countryandtown" target="19" />
       <module name="ecommerce-backend" target="19" />
-      <module name="orders" target="17" />
+      <module name="orders" target="19" />
       <module name="serviceRegistry" target="19" />
     </bytecodeTargetLevel>
   </component>

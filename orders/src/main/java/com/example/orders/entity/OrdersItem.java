@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Getter
 @Setter
 @Entity
@@ -24,5 +27,8 @@ public class OrdersItem {
     private int quantity;
     @Column(name = "product_name")
     private String productName;
+    @ManyToOne()
+    @JoinColumn(name = "order_id")
+    private Orders order;
 }
 

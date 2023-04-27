@@ -1,5 +1,6 @@
 package com.example.orders.dto;
 
+import com.example.orders.entity.Orders;
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,5 +20,5 @@ public class AddressDto {
 
     private String stateName;
     private String streetName;
-
+   private Orders orders;
 }

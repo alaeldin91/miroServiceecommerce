@@ -9,7 +9,8 @@ public class AddressMapper {
                                               , address.getCountryName(),
                                               address.getTownName()
                                              , address.getStateName()
-                                             , address.getStreetName());
+                                             , address.getStreetName(),
+                                                 address.getOrders());
          return addressDto;
     }
     public static  Address mapToAddress(AddressDto addressDto){
@@ -17,7 +18,8 @@ public class AddressMapper {
                                       , addressDto.getCountryName()
                                      , addressDto.getTownName(),
                                        addressDto.getStateName(),
-                                      addressDto.getStreetName());
+                                      addressDto.getStreetName()
+                                      ,addressDto.getOrders());
         return  address;
     }
 }

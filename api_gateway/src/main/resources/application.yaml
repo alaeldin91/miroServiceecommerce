@@ -23,7 +23,10 @@ spring:
           uri: lb://ECOMMERCE-BACKEND
           predicates:
             - Path=/api/v1/product/**
-
+        - id: ECOMMERCE-ORDERS
+          uri: lb://ECOMMERCE-ORDERS
+          predicates:
+            - Path=/api/v1/order/**
 logging:
   file:
     name: API-GET-WAY-SERVER.log
