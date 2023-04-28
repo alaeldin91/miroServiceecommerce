@@ -1,7 +1,6 @@
 package com.example.orders.dto;
 
 import com.example.orders.entity.Orders;
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

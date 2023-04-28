@@ -14,8 +14,8 @@ import java.util.Set;
 @NoArgsConstructor
 public class Purches {
     private   Customer customer;
-    private Address ShippingAddress;
+    private Address shippingAddress;
     private Address billingAddress;
-    private Orders orders;
-    private Set<OrdersItem> ordersItemSet;
+    private Orders order;
+    private Set<OrdersItem> orderItems;
 }
