@@ -18,14 +18,14 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column(name = "country_name",nullable = false)
-    private String countryName;
+    private String country;
     @Column(name = "town_name",nullable = false)
-    private String townName;
+    private String town;
 
     @Column(name = "state_name")
-    private String stateName;
+    private String state;
     @Column(name = "street_name")
-    private String streetName;
+    private String street;
    @OneToOne()
     @PrimaryKeyJoinColumn
     private Orders orders;

@@ -15,10 +15,10 @@ import lombok.*;
 public class AddressDto {
 
     private int id;
-    private String countryName;
-    private String townName;
+    private String country;
+    private String town;
 
-    private String stateName;
-    private String streetName;
+    private String state;
+    private String street;
    private Orders orders;
 }

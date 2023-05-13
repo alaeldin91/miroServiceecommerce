@@ -4,9 +4,7 @@ server:
   endpoints.web.exposure.include: gateway
 spring:
   boot:
-    admin:
-      client:
-        url: http://localhost:8085
+
   application.name: API-GET-WAY-SERVER
   main:
     web-application-type: reactive
