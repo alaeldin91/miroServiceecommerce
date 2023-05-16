@@ -25,6 +25,10 @@ spring:
           uri: lb://ECOMMERCE-ORDERS
           predicates:
             - Path=/api/v1/order/**
+okta:
+  oauth2:
+  client-id: 0oa9blc3ny8xadf0g5d7
+  issuer: https://dev-91962500.okta.com/oauth2/default
 logging:
   file:
     name: API-GET-WAY-SERVER.log

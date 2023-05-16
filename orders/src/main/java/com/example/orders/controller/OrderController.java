@@ -11,6 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @RestController
 @AllArgsConstructor
@@ -24,10 +26,9 @@ public class OrderController {
         PurchaseResponse purchaseResponse =  checkOutService.placeOrder(purches);
         return new ResponseEntity<>(purchaseResponse, HttpStatus.CREATED);
     }
-    @GetMapping(value ="searchOrders/{email}",params = {"page","size"})
-    public ResponseEntity<Page<OrdersDto>> getOrdersByEmail(@PathVariable("email")String email
-            ,@RequestParam("page")int page,@RequestParam("size") int size ){
-        Page<OrdersDto> ordersDtoPage = checkOutService.findByCustomerEmail(email,page,size);
+    @GetMapping("searchOrders/{email}")
+    public ResponseEntity<List<OrdersDto>> getOrdersByEmail(@PathVariable("email")String email){
+        List<OrdersDto> ordersDtoPage = checkOutService.findByCustomerEmail(email);
         return new ResponseEntity<>(ordersDtoPage,HttpStatus.OK);
     }
 }

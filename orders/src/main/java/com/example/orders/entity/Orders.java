@@ -25,6 +25,7 @@ public class Orders {
 
     @Column(name = "order-tracking-name")
     private String orderTrackingName;
+    private int totalPrice;
     private int totalQuantity;
     private String status;
 

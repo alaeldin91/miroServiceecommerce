@@ -15,6 +15,7 @@ public class OrdersDto {
     private int id;
     private String orderTrackingName;
     private int totalQuantity;
+    private int totalPrice;
     private String status;
     private Date createdDate;
     private Date updateDate;

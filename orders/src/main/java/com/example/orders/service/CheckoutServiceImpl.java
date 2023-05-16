@@ -76,20 +76,17 @@ public class CheckoutServiceImpl  implements  CheckOutService{
     }
 
     @Override
-    public Page<OrdersDto> findByCustomerEmail(String email, int page, int size) {
-         Pageable pageable = PageRequest.of(page, size);
+    public List<OrdersDto> findByCustomerEmail(String email) {
        List<Orders> ordersContainingEmail = orderRepository.findByCustomerEmailContaining(email)
                .orElseThrow(()->new ResourceNotFoundException("orders","email",email));
- LOGGER.info("ORDERCONTAIN"+ordersContainingEmail);
-        List<Orders> ordersList =  orderRepository.findByCustomerEmail(email,pageable)
+               LOGGER.info("ORDERCONTAIN"+ordersContainingEmail);
+        List<Orders> ordersList =  orderRepository.findByCustomerEmail(email)
                     .orElseThrow(()->
                 new ResourceNotFoundException("orders","email",email));
         LOGGER.info("ORDERList"+ordersContainingEmail);
 
-        Page<OrdersDto> ordersDtoList = new PageImpl<>(ordersList.stream().map(orderDto->
-                OrderMapper.mapToOrderDto(orderDto)).toList(),pageable,ordersContainingEmail.size());
-        LOGGER.info("ordersPage"+ordersContainingEmail);
-
+        List<OrdersDto> ordersDtoList = ordersList.stream().map(orderDto->
+                OrderMapper.mapToOrderDto(orderDto)).toList();
         return ordersDtoList;
     }
 
